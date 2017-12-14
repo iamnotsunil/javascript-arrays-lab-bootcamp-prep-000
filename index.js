@@ -28,8 +28,10 @@ function appendKitten(name){
   return newKittens
 }
 
-function prependKitten(kittens, name){
-  return [name,...kittens]
+function prependKitten(name){
+  var newKittens = [...kittens]
+  newKittens.unshift(name);
+  return newKittens
 }
 
 function removeFirstKitten(kittens){
